@@ -26,7 +26,7 @@ library(dplyr)
 library(tidyverse)
 
 #read in data
-pth <- 'C:\\Users\\pkall\\Documents\\Emory\\Courses\\INFO550\\homework4\\finalproject\\surveydata.xlsx'
+pth <- 'https://github.com/paigeharton/finalproject.git/surveydata.xlsx'
 
 #clean column names for easier formatting
 surveydata <- read.xlsx(pth, sheet = 'Expat_307') %>% clean_names()
