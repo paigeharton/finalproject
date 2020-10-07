@@ -11,7 +11,7 @@ output: html_document
 
 #openxlsx, janitor, epiDisplay, ggplot2, kableExtra, dplyr, tidyverse
 
-#the below code will run the analysis. There is also a .R 
+#the below code will run the analysis. There is also a .Rmd 
 #file included in this repository that should run the analysis
 
 #! /usr/bin/Rscript 
