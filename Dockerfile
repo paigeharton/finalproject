@@ -11,8 +11,9 @@ RUN Rscript -e "install.packages('janitor')"
 RUN Rscript -e "install.packages('kableExtra')"
 RUN Rscript -e "install.packages('epiDisplay')"
 
+
 # make a project directory in the container
-# we will mount our local project directory to this directory
+# mount our local project directory to this directory
 RUN mkdir /finalproject
 RUN mkdir /finalproject/report
 
@@ -20,7 +21,7 @@ RUN mkdir /finalproject/report
 COPY ./ /finalproject/
 
 # make R scripts executable
-RUN chmod +x /finalproject/*.R
+RUN chmod +x /finalproject/R_Code/*.R
 
 
 # make container entry point bash
