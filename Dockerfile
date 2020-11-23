@@ -20,7 +20,7 @@ RUN mkdir /finalproject/report
 COPY ./ /finalproject/
 
 # make R scripts executable
-RUN chmod +x /finalproject/R/*.R
+RUN chmod +x /finalproject/*.R
 
 
 # make container entry point bash
