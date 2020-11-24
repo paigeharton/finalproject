@@ -15,7 +15,7 @@ install:
 #rule for building dockerfile
 .PHONY:build
 build: Dockerfile
-		docker build -t image .
+	docker build -t image .
 
 #rule for help
 .PHONY: help
