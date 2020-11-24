@@ -33,3 +33,15 @@ make help
 To clean up the working directory, you can run the following bash code from the project folder:
 
 make clean
+
+Execute analysis in docker
+
+Before analysis, pull the docker image using the command:
+
+docker pull paigeharton/image .
+or build the docker image locally by running command:
+
+make build
+To get to the final report, you need to mount your local directory by using command:
+
+docker run -v /localpath/report:/project/report paigeharton/image
