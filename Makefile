@@ -20,7 +20,7 @@ build: Dockerfile
 #rule for help
 .PHONY: help
 help: 
-	@echo "FinalProjectCode.html: Generate final analysis report."
+	@echo "FinalProjectReport.html: Generate final analysis report."
 	@echo "install: Installed R packages needed for analysis."
 	@echo "data.csv: Cleans raw dataset."
 	@echo "build	: Build docker image."
