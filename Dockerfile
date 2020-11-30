@@ -6,7 +6,6 @@ FROM rocker/tidyverse
 RUN Rscript -e "install.packages('ggplot2')"
 RUN Rscript -e "install.packages('dplyr')"
 RUN Rscript -e "install.packages('tidyverse')"
-RUN Rscript -e "install.packages('openxlsx')"
 RUN Rscript -e "install.packages('janitor')"
 RUN Rscript -e "install.packages('kableExtra')"
 RUN Rscript -e "install.packages('epiDisplay')"
