@@ -3,7 +3,7 @@ FinalProjectReport.html: data.csv R_Code/FinalProjectCode.Rmd
 	Rscript -e "rmarkdown::render('R_Code/FinalProjectCode.Rmd')" 
 
 #rule for cleaning data
-data.csv: R_Code/Final_Project_Clean_Data.R Raw_Data/surveydata.xlsx
+data.csv: R_Code/Final_Project_Clean_Data.R Raw_Data/surveydata.csv
 	chmod +x R_Code/Final_Project_Clean_Data.R && \
 	Rscript R_Code/Final_Project_Clean_Data.R
 
