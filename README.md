@@ -58,5 +58,5 @@ make build
 ```
 To get to the final report, you need to mount your local directory by using command:
 ```
-docker run -v /localpath/report:/project/report paigeharton/image
+docker run -v /localpath:/finalproject/output paigeharton/image
 ```
