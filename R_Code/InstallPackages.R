@@ -2,7 +2,6 @@
 
 #install packages
 
-install.packages('openxlsx')
 install.packages('janitor')
 install.packages('epiDisplay')
 install.packages('ggplot2')
