@@ -1,6 +1,6 @@
 #rule for making report
 FinalProjectReport.html: data.csv R_Code/FinalProjectCode.Rmd
-	Rscript -e "rmarkdown::render('R_Code/FinalProjectCode.Rmd')" 
+	Rscript -e "rmarkdown::render('R_Code/FinalProjectCode.Rmd', output_file = '../output/FinalProjectReport.html')" 
 
 #rule for cleaning data
 data.csv: R_Code/Final_Project_Clean_Data.R Raw_Data/surveydata.csv
