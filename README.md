@@ -22,6 +22,11 @@ To install these packages to your computer, from the project folder you can run 
 ```
 make install
 ```
+To clean the data and create the final data csv run the following bash code: 
+
+```
+make data.csv
+```
 
 To execute the analysis, from the project folder you can run the following bash code:
 ```
