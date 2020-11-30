@@ -1,4 +1,6 @@
-/usr/bin/Rscript
+#! /usr/bin/Rscript
+
+library(janitor)
 
 pth <- read.csv(file='Raw_Data/surveydata.csv, na.strings=c("", "NA"))
 
