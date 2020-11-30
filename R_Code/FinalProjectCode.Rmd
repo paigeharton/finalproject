@@ -21,7 +21,7 @@ library(tidyverse)
 #read in data
 
 ```{r, read-data, echo=FALSE}
-pth <- read.csv(file='../data.csv', na.strings=c("", "NA"))
+surveydata <- read.csv(file='../data.csv', na.strings=c("", "NA"))
 ```
 
 #compare confidence in host country response to COVID-19 by country
