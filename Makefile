@@ -1,5 +1,5 @@
 #rule for making report
-FinalProjectCode.html: data.csv R_Code/FinalProjectCode.Rmd
+FinalProjectReport.html: data.csv R_Code/FinalProjectCode.Rmd
 	Rscript -e "rmarkdown::render('R_Code/FinalProjectCode.Rmd')" 
 
 #rule for cleaning data
