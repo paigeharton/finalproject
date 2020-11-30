@@ -2,7 +2,7 @@
 
 library(janitor)
 
-surveydata <- read.csv(file='Raw_Data/surveydata.csv, na.strings=c("", "NA")) %>% clean_names()
+surveydata <- read.csv(file='Raw_Data/surveydata.csv', na.strings=c("", "NA")) %>% clean_names()
 
 surveydata$teachingcountry <- dplyr::recode(surveydata$teaching_at, '1' = "Indonesia", '2' = "Thailand", '3' = "Philippines", '4' = "Vietnam", '5' = "Singapore")
 
